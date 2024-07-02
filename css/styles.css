@@ -15,6 +15,7 @@ html {
 
 header{
     position: sticky;
+    width: 100vw;
     top: 0px;
     z-index: 1;
     background-color: #2E2824 ;
@@ -129,7 +130,7 @@ span{
 .sobre-mi-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
    justify-content: space-evenly;
 }
@@ -190,6 +191,7 @@ span{
 .habilidades-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .habilidades-card{
@@ -288,6 +290,7 @@ footer{
     justify-content: space-around;
     background-color: #2E2824;
     color: white;
+    width: 100vw;
 }
 
 .footer-parrafo{
@@ -305,4 +308,206 @@ footer{
 
 .footer-redes img{
     width: 50px;
+}
+
+/*!Media queries*/
+
+@media (max-width: 1440px){
+
+    .inicio-texto p {
+        font-size: 1rem;
+    }
+
+    .inicio-imagen img {
+        width: 350px;
+    }
+
+    .inicio-texto h1 {
+        font-size: 4rem;
+    }
+
+    .sobre-mi h2{
+        margin-bottom: 100px ;
+    }
+
+    .sobre-mi p{
+        font-size: 1rem;
+    }
+
+    .proyectos h2{
+        margin-bottom: 100px;
+    }
+
+    .habilidades-card img {
+        width: 130px;
+        height: 120px;
+    }
+
+    .habilidades h2{
+        margin-bottom: 100px;
+    }
+
+}
+
+@media (max-width: 1010px){
+    .inicio-texto p {
+        font-size: 0.8rem;
+    }
+
+    .inicio-imagen img {
+        width: 300px;
+    }
+
+    .inicio-texto h1 {
+        font-size: 3rem;
+    }
+
+    .sobre-mi p {
+        font-size: 0.9rem;
+    }
+    .sobre-mi-imagen img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 940px){
+
+    .habilidades-card img {
+        width: 80px;
+        height: 70px;
+    }
+
+    .proyectos-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 820px){
+    .inicio-imagen img {
+        width: 250px;
+    }
+
+    .sobre-mi-imagen img {
+        width: 300px;
+    }
+
+    .sobre-mi p {
+        font-size: 0.8rem;
+    }
+    .sobre-mi-boton {
+        width: 150px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 750px){
+    .inicio-texto h1 {
+        font-size: 2.5rem;
+    }
+
+    .habilidades-card {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 690px){
+
+    .inicio-texto h1 {
+        font-size: 2rem;
+    }
+
+    .habilidades-card {
+        flex: 0 0 100px;
+    }
+    .sobre-mi-boton{
+        margin-top: 20px;
+    }
+
+    .sobre-mi-parrafo{
+        padding: 0px;
+        width: 50%;
+    }
+
+    .sobre-mi-imagen img {
+        width: 250px;
+    }
+
+    .proyectos-card{
+        width: 230px;
+    }
+
+    .boton-personalizado{
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 580px){
+
+    .inicio-texto p{
+        margin-left: 10px;
+    }
+
+    .inicio-texto h1{
+        margin-left: 10px;
+    }
+
+    .inicio-boton{
+        margin-left: 10px;
+        width: 150px;
+    }
+
+    .sobre-mi-boton {
+        width: 120px;
+        height: 50px;
+    }
+
+    .sobre-mi-imagen img{
+        width: 150px;
+    }
+}
+
+@media (max-width: 450px){
+    .inicio{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .inicio-texto p{
+        font-size: 1.2rem;
+    }
+
+    .sobre-mi-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-mi-parrafo{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .proyectos-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyectos h2, .certificados h2, .habilidades h2, .sobre-mi h2{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .proyectos-card{
+        font-size: 0.5rem;
+        width: 200px;
+        margin: 5px;
+    }
+
+    .proyectos-card img{
+        width: 200px;
+        height: 200px;
+    }
 }
